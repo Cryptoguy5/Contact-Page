@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <style>
+           body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           }
+           
+           .main {
+            background: linear-gradient(180deg, rgb(19, 174, 156), rgb(6, 39, 109) );
+            height: 85%;
+            width: 50%;
+            color: white;
+           }
+
+           .center {
+            text-align: center;
+           }
+
+           h1 {
+            font-size: 64px;
+           }
+
+           p {
+            font-size: 18px;
+           }
+
+           form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+           }
+
+           input {
+            width: 100%;
+            margin-bottom: 10px;
+            font-size: 18px;
+           }
+
+           .inputbox {
+            width: 70%;
+            margin-bottom: 10px;
+           }
+
+           .message {
+            height: 100px;
+           }
+
+           button {
+            width: 70%;
+            border-color: blue;
+            background: rgb(19, 138, 174);
+            color: white;
+            margin: 20px;
+            padding: 15px;
+           }
+
+           span {
+            font-size: 10px;
+           }
+
+           @media (max-width: 680px) {
+            .main {
+                height: 100%;
+                width: 100%;
+            }
+           }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="center">
+            <h1>Contact Us</h1>
+            <p>Got a question? We would love to hear from you. 
+               Send us a message <br /> and we will respond as soon as possible. </p>
+        </div>
+        <div>
+            <form>
+               <div class="inputbox">
+                <label for="name">Name<span>*</span></label>
+                <input required id="name" type="text">
+               </div>
+               <div class="inputbox">
+                <label for="emailaddress">Email Address<span>*</span></label>
+                <input required id="emailaddress" type="text">
+               </div>
+               <div class="inputbox">
+                <label for="message">Message</label>
+                <input class="message" id="message" type="text">
+               </div>
+               <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
